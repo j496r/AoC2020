@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    "prettier"
+	],
+	"env": {
+		"es6": true,
+		"node": true
+	},
+	"extends": ["eslint:all", "plugin:prettier/recommended"],
+	"parserOptions": {
+		"sourceType": "module"
+	},
+	"rules": {
+		"one-var": ["error", "never"],
+		"init-declarations": ["off"],
+		"no-magic-numbers": ["off"],
+		"id-length": ["off"],
+		"no-continue": ["off"]
+	}
+}

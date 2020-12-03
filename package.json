@@ -1,0 +1,29 @@
+{
+  "name": "AoC2020",
+  "version": "1.0.0",
+  "description": "Let's take a break from saving Santa.",
+	"main": "index.js",
+	"type": "module",
+  "scripts": {
+		"hornta": "nodemon scripts/start.js hornta",
+		"jonte": "nodemon scripts/start.js jonte"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j496r/AoC2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j496r/AoC2020/issues"
+  },
+  "homepage": "https://github.com/j496r/AoC2020#readme",
+  "dependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.1"
+  }
+}
