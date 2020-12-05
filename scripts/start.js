@@ -1,5 +1,15 @@
 import fs from "fs";
 import { spawn } from "child_process";
+import { AsciiArt } from "./asciiart.js";
+
+function showGreeting(day)
+{
+	AsciiArt.printString(`                     AoC   2020`);
+	console.log("");
+	AsciiArt.printSanta();
+	AsciiArt.printString(`                               Dec ${day}`);
+	console.log("");
+}
 
 const [, , folder, day] = process.argv;
 
@@ -54,7 +64,8 @@ if (!currentDir) {
 	throw new Error("It appears as if you have no days");
 }
 
-console.log(`Day ${currentDir.name} of AoC 2020:`);
+showGreeting(currentDir.name)
+
 spawn("node", [`index.js`], {
 	cwd: `${folder}/${currentDir.name}`,
 	stdio: "inherit",
