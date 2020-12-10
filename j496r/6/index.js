@@ -45,7 +45,7 @@ function part2_solve(data)
 	{
 		if (data[i] === "")
 		{
-	    for (const count of currentGroup.values())
+			for (const count of currentGroup.values())
 			{
 				totalCount += (count == currentGroupSize) ? 1 : 0;
 			}
